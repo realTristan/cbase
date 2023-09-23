@@ -8,9 +8,12 @@ Enter a base: 16
 Result: 3E8
 ```
 
-### How to run
+### How to run locally
 Run the following in the terminal of the root dir.
 `make`
+
+### How to run with docker
+``
 
 # License
 MIT License
