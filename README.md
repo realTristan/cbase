@@ -9,7 +9,7 @@ Result: 3E8
 ```
 
 ### How to run
-Run the code below in the terminal of the root dir.
+Run the following in the terminal of the root dir.
 `make`
 
 # License
