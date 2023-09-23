@@ -9,8 +9,7 @@
  */
 int main(void)
 {
-  int n;
-  int b;
+  int n, b;
   string result = malloc(sizeof(char) * 100);
 
   printf("Enter a number: ");
