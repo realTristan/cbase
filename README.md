@@ -1,5 +1,5 @@
-# cbin
-Convert decimal to binary, hex, octal, etc. and the other way around!
+# cbase
+Convert decimal to binary, hex, octal, etc. and vice versa!
 
 ### Example
 ```bash
