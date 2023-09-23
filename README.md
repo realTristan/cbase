@@ -1,12 +1,16 @@
 # cbase
 Convert decimal to binary, hex, octal, etc. and vice versa!
 
-### Example
+## Example
 ```bash
 Enter a number: 1000
 Enter a base: 16
 Result: 3E8
 ```
+
+### How to run
+Run the code below in the terminal of the root dir.
+`make`
 
 # License
 MIT License
