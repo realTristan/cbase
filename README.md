@@ -1,12 +1,19 @@
-# cbin
-Convert decimal to binary, hex, octal, etc. and the other way around!
+# cbase
+Convert decimal to binary, hex, octal, etc. and vice versa!
 
-### Example
+## Example
 ```bash
 Enter a number: 1000
 Enter a base: 16
 Result: 3E8
 ```
+
+### How to run locally
+Run the following in the terminal of the root dir.
+`make`
+
+### How to run with docker
+``
 
 # License
 MIT License
