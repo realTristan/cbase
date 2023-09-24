@@ -12,12 +12,15 @@ Base to decimal result: 289423
 
 ### How to run locally
 Run the following in the terminal of the root dir.
-`make`
+```
+$ make
+```
 
 ### How to run with docker
 ```
-docker build -t cbase .
-docker run -it --rm --name cbase cbase
+$ docker build -t cbase .
+$ docker run -it --rm --name cbase cbase
+$ make
 ```
 
 # License
