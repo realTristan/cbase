@@ -15,7 +15,10 @@ Run the following in the terminal of the root dir.
 `make`
 
 ### How to run with docker
-``
+```
+docker build -t cbase .
+docker run -it --rm --name cbase cbase
+```
 
 # License
 MIT License
