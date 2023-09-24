@@ -3,9 +3,11 @@ Convert decimal to binary, hex, octal, etc. and vice versa!
 
 ## Example
 ```bash
-Enter a number: 1000
+Enter a number: 289423
 Enter a base: 16
-Result: 3E8
+
+Decimal to base result: 46A8F
+Base to decimal result: 289423
 ```
 
 ### How to run locally

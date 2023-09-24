@@ -5,39 +5,9 @@
 #include <string.h>
 #include <stdio.h>
 #include "types/string.h"
+#include "utils/hex.h"
 
-string num_to_hex(const int);
 string decimal_to_base(int n, const int);
-
-/**
- * Converts a number to a hex character
- * @param r The number to convert
- * @return The hex string
- */
-string num_to_hex(const int r)
-{
-  switch (r)
-  {
-  case 10:
-    return "A";
-  case 11:
-    return "B";
-  case 12:
-    return "C";
-  case 13:
-    return "D";
-  case 14:
-    return "E";
-  case 15:
-    return "F";
-  default:
-  {
-    string s = malloc(sizeof(char) * 2);
-    sprintf(s, "%d", r);
-    return s;
-  }
-  }
-}
 
 /**
  * Converts a decimal number to a base

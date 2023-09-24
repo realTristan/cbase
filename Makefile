@@ -2,7 +2,8 @@ CC = gcc
 
 CFLAGS = -Wall -std=c99
 
-FILES = src/main.c src/decimal_to_base.c
+MAIN_FILES = src/main.c src/decimal_to_base.c src/base_to_decimal.c
+UTILS = src/utils/math.c src/utils/hex.c src/utils/strings.c
 
 all: make_build output run
 
@@ -12,7 +13,7 @@ make_build:
 
 # Compile the main.c file into the build directory
 output:
-	$(CC) $(CFLAGS) -o build/main.out $(FILES)
+	$(CC) $(CFLAGS) -o build/main.out $(MAIN_FILES) $(UTILS)
 
 # Run the main output file from the build directory
 run:

@@ -3,6 +3,7 @@
 
 #include "types/string.h"
 #include "decimal_to_base.h"
+#include "base_to_decimal.h"
 
 /**
  * Main function
@@ -10,8 +11,8 @@
  */
 int main(void)
 {
-  int n, b;
-  string result = malloc(sizeof(char) * 100);
+  int n, b, bd;
+  string db = malloc(sizeof(char) * 100);
 
   printf("Enter a number: ");
   scanf("%d", &n);
@@ -20,7 +21,11 @@ int main(void)
   scanf("%d", &b);
 
   // decimal_to_base from decimal_to_base.c
-  result = decimal_to_base(n, b);
+  db = decimal_to_base(n, b);
 
-  printf("Result: %s\n", result);
+  // base_to_decimal from base_to_decimal.c
+  bd = base_to_decimal(db, b);
+
+  printf("Decimal to base result: %s\n", db);
+  printf("Base to decimal result: %d\n", bd);
 }
