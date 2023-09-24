@@ -1,5 +1,5 @@
 # cbase
-Convert decimal to binary, hex, octal, etc. and vice versa!
+Convert decimal to binary, hex, octal, etc. and vice versa! Numeral representation concepts learned in our CIS*1910 class.
 
 ## Example
 ```bash
