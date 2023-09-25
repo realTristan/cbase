@@ -22,7 +22,7 @@ $ make
 ### How to test locally
 Run the following in the terminal of the root dir. (with the Makefile) or in the docker container.
 ```
-$ make test
+$ make testing
 ```
 
 ### How to run with docker
