@@ -11,6 +11,7 @@
 
 /**
  * Asserts that a condition is true
+ * @param count The number of tests
  * @param condition The condition to assert
  */
 void assert(int *count, int condition)

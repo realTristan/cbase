@@ -1,6 +1,8 @@
 #ifndef BASE_TO_DECIMAL_H
 #define BASE_TO_DECIMAL_H
 
+#include "types/string.h"
+
 /**
  * Converts a number from a base to decimal
  * @param h The value to convert
