@@ -14,9 +14,15 @@ Base to decimal result: 289423
 ```
 
 ### How to run locally
-Run the following in the terminal of the root dir. (with the Makefile)
+Run the following in the terminal of the root dir. (with the Makefile)  or in the docker container.
 ```
 $ make
+```
+
+### How to test locally
+Run the following in the terminal of the root dir. (with the Makefile) or in the docker container.
+```
+$ make test
 ```
 
 ### How to run with docker
