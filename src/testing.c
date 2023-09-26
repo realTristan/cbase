@@ -8,7 +8,6 @@
 #include "utils/strings.h"
 #include "base_16_to_decimal.h"
 
-
 // Keep track of the number of tests
 #define TOTAL_TESTS 9
 
@@ -41,9 +40,7 @@ int main(void)
 
   // base_16_to_decimal from base_16_to_decimal
   assert(&count, &start, base16_to_decimal("3E8") == 1000);
-
 }
-
 
 /**
  * Asserts that a condition is true
