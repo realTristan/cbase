@@ -6,8 +6,18 @@
 #include <ctype.h>
 #include "types/string.h"
 
-int hex_char_to_decimal(char hexChar);
+/**
+ * Converts a hex character to its decimal equivalent
+ * @param c The hex character to convert
+ * @return The converted number
+ */
+int hex_char_to_decimal(const char c);
 
-int base16_to_decimal(const string hexStr);
+/**
+ * Converts a base-16 (hexadecimal) string to decimal
+ * @param h The hex string to convert
+ * @return The converted number
+ */
+int base16_to_decimal(const string h);
 
 #endif
