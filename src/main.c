@@ -4,6 +4,7 @@
 #include "types/string.h"
 #include "decimal_to_base.h"
 #include "base_to_decimal.h"
+#include "base_16_to_decimal.c"
 
 /**
  * Main function
@@ -28,4 +29,12 @@ int main(void)
 
   printf("Decimal to base result: %s\n", db);
   printf("Base to decimal result: %d\n", bd);
+
+
+  const char *hexadecimal = "1A3"; // Replace with your hex string
+  int decimalValue = base16_to_decimal(hexadecimal);
+  printf("Decimal Value: %d\n", decimalValue);
+
+    return 0;
+
 }
