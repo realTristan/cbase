@@ -32,7 +32,7 @@ string decimal_to_base(int n, const int b)
   const int len = strlen(result);
   char *reversed = malloc(sizeof(char) * len);
 
-  for (int i = 0; i < len; i++)
+  for (unsigned int i = 0; i < len; i++)
   {
     reversed[i] = result[len - i - 1];
   }
