@@ -10,6 +10,34 @@
 // Keep track of the number of tests
 #define TOTAL_TESTS 8
 
+// Asserts that a condition is true
+void assert(int *count, clock_t *start, int condition);
+
+/**
+ * Main function
+ * @return The exit code
+ */
+int main(void)
+{
+  // Keep track of the number of tests
+  int count = 0;
+
+  // Keep track of the time
+  clock_t start = clock();
+
+  // decimal_to_base from decimal_to_base.c
+  assert(&count, &start, streq(decimal_to_base(1000, 16), "3E8"));
+  assert(&count, &start, streq(decimal_to_base(1000, 2), "1111101000"));
+  assert(&count, &start, streq(decimal_to_base(1000, 8), "1750"));
+  assert(&count, &start, streq(decimal_to_base(1000, 10), "1000"));
+
+  // base_to_decimal from base_to_decimal.c
+  assert(&count, &start, base_to_decimal("3E8", 16) == 1000);
+  assert(&count, &start, base_to_decimal("1111101000", 2) == 1000);
+  assert(&count, &start, base_to_decimal("1750", 8) == 1000);
+  assert(&count, &start, base_to_decimal("1000", 10) == 1000);
+}
+
 /**
  * Asserts that a condition is true
  * @param count The number of tests
@@ -35,29 +63,4 @@ void assert(int *count, clock_t *start, int condition)
 
   // Reset the start time
   *start = clock();
-}
-
-/**
- * Main function
- * @return The exit code
- */
-int main(void)
-{
-  // Keep track of the number of tests
-  int count = 0;
-
-  // Keep track of the time
-  clock_t start = clock();
-
-  // decimal_to_base from decimal_to_base.c
-  assert(&count, &start, streq(decimal_to_base(1000, 16), "3E8"));
-  assert(&count, &start, streq(decimal_to_base(1000, 2), "1111101000"));
-  assert(&count, &start, streq(decimal_to_base(1000, 8), "1750"));
-  assert(&count, &start, streq(decimal_to_base(1000, 10), "1000"));
-
-  // base_to_decimal from base_to_decimal.c
-  assert(&count, &start, base_to_decimal("3E8", 16) == 1000);
-  assert(&count, &start, base_to_decimal("1111101000", 2) == 1000);
-  assert(&count, &start, base_to_decimal("1750", 8) == 1000);
-  assert(&count, &start, base_to_decimal("1000", 10) == 1000);
 }
