@@ -13,6 +13,7 @@
 /**
  * Asserts that a condition is true
  * @param count The number of tests
+ * @param start The start time
  * @param condition The condition to assert
  */
 void assert(int *count, clock_t *start, int condition)
