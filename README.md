@@ -8,8 +8,8 @@ Convert decimal to binary, hex, octal, etc. and vice versa! Numeral representati
 - [X] Convert from decimal to base b
 - [X] Convert from base b to decimal
 - [X] Convert from base b to base c
-- [ ] Add bases
-- [ ] Multiply bases
+- [X] Add bases
+- [X] Multiply bases
 
 ## Example
 ```bash

@@ -8,9 +8,11 @@
 #include "utils/strings.h"
 #include "base_16_to_decimal.h"
 #include "base_to_base.h"
+#include "base_addition.h"
+#include "base_product.h"
 
 // Keep track of the number of tests
-#define TOTAL_TESTS 16
+#define TOTAL_TESTS 19
 
 // Asserts that a condition is true
 void assert(int *count, clock_t *start, int condition);
@@ -50,6 +52,13 @@ int main(void)
   assert(&count, &start, streq(base_to_base("3E8", 16, 8), "1750"));
   assert(&count, &start, streq(base_to_base("1111101000", 2, 10), "1000"));
   assert(&count, &start, streq(base_to_base("1111101000", 2, 16), "3E8"));
+
+  // base_addition from base_addition.c
+  assert(&count, &start, streq(base_addition("3E8", "3E8", 16, 16), "7D0"));
+
+  // base_product from base_product.c
+  assert(&count, &start, streq(base_product("7F", "7F", 16, 16), "3F01"));
+  assert(&count, &start, streq(base_product("531", "74", 8, 8), "50334"));
 }
 
 /**
