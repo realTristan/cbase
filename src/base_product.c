@@ -9,6 +9,8 @@
 #include "decimal_to_base.h"
 #include "utils/hex.h"
 
+string base_product(string h1, string h2, int b1, int b2);
+
 /**
  * Multiplies two base representations together
  * @param h1 The first base representation

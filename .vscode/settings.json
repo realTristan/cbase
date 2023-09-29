@@ -5,6 +5,7 @@
     "math.h": "c",
     "strings.h": "c",
     "base_16_to_decimal.h": "c",
-    "base_to_decimal.h": "c"
+    "base_to_decimal.h": "c",
+    "hex.h": "c"
   }
 }

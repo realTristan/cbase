@@ -5,6 +5,8 @@
 #include "decimal_to_base.h"
 #include "types/string.h"
 
+string base_to_base(string h, int b1, int b2);
+
 /**
  * Converts a number from one base to another
  * @param h The hex to convert
