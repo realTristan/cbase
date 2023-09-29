@@ -5,7 +5,9 @@
 Convert decimal to binary, hex, octal, etc. and vice versa! Numeral representation concepts learned in our CIS*1910 class.
 
 ## Todo
-- [ ] Convert from base b to base c
+- [X] Convert from decimal to base b
+- [X] Convert from base b to decimal
+- [X] Convert from base b to base c
 - [ ] Add bases
 - [ ] Multiply bases
 
