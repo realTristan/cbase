@@ -12,7 +12,7 @@
 #include "base_product.h"
 
 // Keep track of the number of tests
-#define TOTAL_TESTS 19
+#define TOTAL_TESTS 22
 
 // Asserts that a condition is true
 void assert(int *count, clock_t *start, int condition);
@@ -55,10 +55,15 @@ int main(void)
 
   // base_addition from base_addition.c
   assert(&count, &start, streq(base_addition("3E8", "3E8", 16, 16), "7D0"));
+  assert(&count, &start, streq(base_addition("1111101000", "1111101000", 2, 2), "11111010000"));
+  assert(&count, &start, streq(base_addition("1000", "1000", 10, 10), "2000"));
 
   // base_product from base_product.c
   assert(&count, &start, streq(base_product("7F", "7F", 16, 16), "3F01"));
   assert(&count, &start, streq(base_product("531", "74", 8, 8), "50334"));
+  assert(&count, &start, streq(base_product("101", "101", 2, 2), "11001"));
+
+  printf("\n\033[0;32m[%d/%d] All tests passed!\n", count, TOTAL_TESTS);
 }
 
 /**
@@ -78,6 +83,7 @@ void assert(int *count, clock_t *start, int condition)
   if (!condition)
   {
     printf("\033[0;31m[%d/%d] Test failed in %lfs\n", *count, TOTAL_TESTS, time_spent);
+    exit(0);
   }
   else
   {
