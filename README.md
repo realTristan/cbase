@@ -4,6 +4,11 @@
 
 Convert decimal to binary, hex, octal, etc. and vice versa! Numeral representation concepts learned in our CIS*1910 class.
 
+## Todo
+- [ ] Convert from base b to base c
+- [ ] Add bases
+- [ ] Multiply bases
+
 ## Example
 ```bash
 Enter a number: 289423
