@@ -34,14 +34,9 @@ $ make
 ```
 
 ### How to test locally
-Run the following in the terminal of the root dir. (with the Makefile) or in the docker container.
+Run the following in the terminal of the root dir. (with the Makefile) or in the docker container. All tests must be passed before code is merged into master!
 ```
 $ make testing
-```
-
-All tests must be passed before code is merged into master!
-```bash
-\033[0;32m[22/22] All tests passed!
 ```
 
 ### How to run with docker
