@@ -13,11 +13,18 @@ Convert decimal to binary, hex, octal, etc. and vice versa! Numeral representati
 
 ## Example
 ```bash
-Enter a number: 289423
-Enter a base: 16
+[1] Decimal to base conversion
+[2] Base to decimal conversion
+[3] Base to base conversion
+[4] Base addition
+[5] Base multiplication
+[6] Decimal to base 16 conversion
 
-Decimal to base result: 46A8F
-Base to decimal result: 289423
+>> 1
+
+Enter a number: 12931
+Enter a base: 16
+Decimal to base result: 3283
 ```
 
 ### How to run locally
