@@ -7,7 +7,6 @@
 #include "types/string.h"
 #include "base_to_decimal.h"
 #include "decimal_to_base.h"
-#include "utils/hex.h"
 
 string base_addition(string h1, string h2, int b1, int b2);
 
