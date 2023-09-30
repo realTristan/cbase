@@ -253,7 +253,7 @@ void opt_base_subtraction(void)
   string h2 = malloc(sizeof(char) * 100);
   string res = malloc(sizeof(char) * 100);
 
-  printf("Enter a base represention: ");
+  printf("Enter the base represention: ");
   scanf("%s", h1);
 
   printf("Enter the base of the representation: ");

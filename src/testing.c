@@ -64,7 +64,7 @@ int main(void)
   assert(&count, &start, streq(base_product("531", "74", 8, 8), "50334"));
   assert(&count, &start, streq(base_product("101", "101", 2, 2), "11001"));
 
-  // base_subtraction from base_subtraction.c
+  // The base_subtraction from base_subtraction.c
   assert(&count, &start, streq(base_subtraction("2321","1332", 4, 4), "323"));
   assert(&count, &start, streq(base_subtraction("453", "345", 8, 8), "106"));
   assert(&count, &start, streq(base_subtraction("422", "143", 5, 5), "224"));
