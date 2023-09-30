@@ -8,6 +8,7 @@
 #include "base_to_base.h"
 #include "base_addition.h"
 #include "base_product.h"
+#include "base_subtraction.h"
 
 void handle_opt(int opt);
 void opt_decimal_to_base(void);
@@ -16,6 +17,7 @@ void opt_base_to_base(void);
 void opt_base_addition(void);
 void opt_base_product(void);
 void opt_base_16_to_decimal(void);
+void opt_base_subtraction(void);
 
 /**
  * Main function
@@ -33,6 +35,7 @@ int main(void)
     printf("[4] Base addition\n");
     printf("[5] Base multiplication\n");
     printf("[6] Decimal to base 16 conversion\n");
+    printf("[7] Base Subtraction\n");
     printf("\n>> ");
     scanf("%d", &opt);
     printf("\n");
@@ -75,6 +78,9 @@ void handle_opt(int opt)
     break;
   case 6:
     opt_base_16_to_decimal();
+    break;
+  case 7:
+    opt_base_subtraction();
     break;
   default:
     printf("Invalid option\n");
@@ -232,4 +238,36 @@ void opt_base_16_to_decimal(void)
   res = base16_to_decimal(h1);
 
   printf("Base 16 to decimal result: %d\n", res);
+}
+
+/** Subtracts two base representations
+ * @param void
+ * @return void
+ */
+
+void opt_base_subtraction(void)
+{
+  int b1, b2;
+
+  string h1 = malloc(sizeof(char) * 100);
+  string h2 = malloc(sizeof(char) * 100);
+  string res = malloc(sizeof(char) * 100);
+
+  printf("Enter a base represention: ");
+  scanf("%s", h1);
+
+  printf("Enter the base of the representation: ");
+  scanf("%d", &b1);
+
+  printf("\nEnter another base representation: ");
+  scanf("%s", h2);
+
+  printf("Enter the base of the representation: ");
+  scanf("%d", &b2);
+
+  // base_subtraction from base_subtraction.c
+  res = base_subtraction(h1, h2, b1, b2);
+
+  printf("The Base subtraction result: %s\n", res);
+
 }

@@ -10,9 +10,10 @@
 #include "base_to_base.h"
 #include "base_addition.h"
 #include "base_product.h"
+#include "base_subtraction.h"
 
 // Keep track of the number of tests
-#define TOTAL_TESTS 22
+#define TOTAL_TESTS 25
 
 // Asserts that a condition is true
 void assert(int *count, clock_t *start, int condition);
@@ -62,6 +63,11 @@ int main(void)
   assert(&count, &start, streq(base_product("7F", "7F", 16, 16), "3F01"));
   assert(&count, &start, streq(base_product("531", "74", 8, 8), "50334"));
   assert(&count, &start, streq(base_product("101", "101", 2, 2), "11001"));
+
+  // base_subtraction from base_subtraction.c
+  assert(&count, &start, streq(base_subtraction("2321","1332", 4, 4), "323"));
+  assert(&count, &start, streq(base_subtraction("453", "345", 8, 8), "106"));
+  assert(&count, &start, streq(base_subtraction("422", "143", 5, 5), "224"));
 
   printf("\n\033[0;32m[%d/%d] All tests passed!\n", count, TOTAL_TESTS);
 }
