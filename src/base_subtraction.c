@@ -30,7 +30,7 @@ string base_subtraction(string h1, string h2, int b1, int b2)
   int decimal1 = base_to_decimal(h1, b1);
   int decimal2 = base_to_decimal(h2, b2);
 
-  // Perform the subtraction
+  // Perform the subtraction below
   int result = decimal1 - decimal2;
 
   // Convert the decimal result into a base b

@@ -12,7 +12,7 @@
 #include "base_product.h"
 #include "base_subtraction.h"
 
-// Keep track of the number of tests
+// Keep track of the number of tests.
 #define TOTAL_TESTS 25
 
 // Asserts that a condition is true

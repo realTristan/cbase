@@ -265,7 +265,7 @@ void opt_base_subtraction(void)
   printf("Enter the base of the representation: ");
   scanf("%d", &b2);
 
-  // base_subtraction from base_subtraction.c
+  // base_subtraction from base_subtraction.c . 
   res = base_subtraction(h1, h2, b1, b2);
 
   printf("The Base subtraction result: %s\n", res);
