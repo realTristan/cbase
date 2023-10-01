@@ -2,7 +2,7 @@ CC = gcc
 
 CFLAGS = -Wall -std=c99
 
-DEPS = src/decimal_to_base.c src/base_to_decimal.c src/base_16_to_decimal.c src/base_to_base.c src/base_addition.c src/base_product.c
+DEPS = src/decimal_to_base.c src/base_to_decimal.c src/base_16_to_decimal.c src/base_to_base.c src/base_addition.c src/base_product.c src/base_subtraction.c
 UTILS = src/utils/math.c src/utils/hex.c src/utils/strings.c
 
 # make command: make
