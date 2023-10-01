@@ -19,7 +19,7 @@ string decimal_to_base(int n, const int b)
 {
   string result = malloc(sizeof(char) * 100);
 
-  while (n != 0)
+  while (1)
   {
     const int r = n % b;
 
@@ -27,6 +27,11 @@ string decimal_to_base(int n, const int b)
     strcat(result, s);
 
     n /= b;
+
+    if (n == 0)
+    {
+      break;
+    }
   }
 
   const int len = strlen(result);
